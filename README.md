@@ -89,7 +89,7 @@ git clone https://github.com/c0zyb1ue/spec-before-lean-implementation
 
 mkdir -p ~/.agents/skills
 
-ln -s ~/lean-spec-implementation ~/.agents/skills/lean-spec-implementation
+ln -s ~/spec-before-lean-implementation ~/.agents/skills/spec-before-lean-implementation
 ```
 
 Verify that the symbolic link was created correctly:
@@ -101,7 +101,7 @@ ls -l ~/.agents/skills
 You should see something like:
 
 ```bash
-lean-spec-implementation -> ~/lean-spec-implementation
+spec-before-lean-implementation -> ~/spec-before-lean-implementation
 ```
 
 ---
@@ -111,7 +111,7 @@ lean-spec-implementation -> ~/lean-spec-implementation
 The repository should contain a `SKILL.md` file at its root:
 
 ```text
-~/lean-spec-implementation/
+~/spec-before-lean-implementation/
 ├── SKILL.md
 └── README.md
 ```
@@ -120,7 +120,7 @@ After linking, the agent skill path should look like this:
 
 ```text
 ~/.agents/skills/
-└── lean-spec-implementation -> ~/lean-spec-implementation
+└── spec-before-lean-implementation -> ~/spec-before-lean-implementation
 ```
 
 ---
@@ -130,7 +130,7 @@ After linking, the agent skill path should look like this:
 In your coding agent, ask it to use the skill explicitly:
 
 ```text
-Use the lean-spec-implementation skill.
+Use the spec-before-lean-implementation skill.
 
 I want to add [feature/module/script] to this repository.
 First inspect the existing code, check whether the task can be solved with less new implementation, apply the minimal implementation ladder, ask only blocking questions, freeze a mini-spec, then implement the smallest sufficient change.
@@ -139,7 +139,7 @@ First inspect the existing code, check whether the task can be solved with less 
 Example:
 
 ```text
-Use the lean-spec-implementation skill.
+Use the spec-before-lean-implementation skill.
 
 I want to add a CLI script that converts input JSON files into CSV files.
 Before writing new code, check whether the repository already has a similar converter or utility.
@@ -254,13 +254,13 @@ It avoids:
 Remove the symbolic link:
 
 ```bash
-rm ~/.agents/skills/lean-spec-implementation
+rm ~/.agents/skills/spec-before-lean-implementation
 ```
 
 Optionally remove the cloned repository:
 
 ```bash
-rm -rf ~/lean-spec-implementation
+rm -rf ~/spec-before-lean-implementation
 ```
 
 ---
@@ -268,7 +268,7 @@ rm -rf ~/lean-spec-implementation
 ## Recommended Prompt
 
 ```text
-Use the lean-spec-implementation skill.
+Use the spec-before-lean-implementation skill.
 
 Before implementing, check whether this task can be solved by:
 1. doing nothing
