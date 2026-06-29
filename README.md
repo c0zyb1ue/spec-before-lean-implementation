@@ -85,7 +85,7 @@ Clone this repository under your home directory, then create a symbolic link int
 ```bash
 cd ~
 
-git clone <YOUR_REPOSITORY_URL> lean-spec-implementation
+git clone https://github.com/c0zyb1ue/spec-before-lean-implementation
 
 mkdir -p ~/.agents/skills
 
@@ -101,13 +101,7 @@ ls -l ~/.agents/skills
 You should see something like:
 
 ```bash
-lean-spec-implementation -> /Users/<your-name>/lean-spec-implementation
-```
-
-On Linux, the path may look like:
-
-```bash
-lean-spec-implementation -> /home/<your-name>/lean-spec-implementation
+lean-spec-implementation -> ~/lean-spec-implementation
 ```
 
 ---
